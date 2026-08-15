@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shafinus Syrus S — Official Resume & Credentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --dark: #0f172a;
+      --text: #334155;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+    .resume-actions {
+      max-width: 820px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--primary); color: #fff; border: none; }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-outline { background: #fff; color: var(--dark); border: 1px solid var(--border); }
+    .btn-outline:hover { background: #f1f5f9; }
+
+    .resume-paper {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 48px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+    }
+    .resume-header {
+      border-bottom: 2px solid var(--dark);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .resume-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 3px solid var(--primary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .resume-header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.5px;
+    }
+    .resume-header .title {
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 12px;
+      font-size: 0.88rem;
+      color: var(--text-light);
+    }
+    .contact-links a { color: var(--text-light); text-decoration: none; }
+    .contact-links a:hover { color: var(--primary); }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--dark);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin: 24px 0 12px 0;
+    }
+
+    p { font-size: 0.93rem; color: var(--text); }
+    ul { margin-left: 20px; font-size: 0.93rem; }
+    li { margin-bottom: 6px; }
+
+    .job-head, .edu-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--dark);
+    }
+    .job-sub, .edu-sub {
+      font-size: 0.88rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    @media print {
+      body { padding: 0; background: #fff; }
+      .resume-actions { display: none; }
+      .resume-paper { box-shadow: none; border: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-actions">
+    <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Back to Interactive Portfolio</a>
+    <button onclick="window.print()" class="btn btn-primary"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-paper">
+    <header class="resume-header">
+      <div>
+        <h1>SHAFINUS SYRUS S</h1>
+        <div class="title">Computer Science & Engineering Graduate</div>
+        <div class="contact-links">
+          <span><i class="fa-solid fa-phone"></i> +91 73958 07834</span>
+          <span><i class="fa-solid fa-envelope"></i> shafinussyrus@gmail.com</span>
+          <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/shafinus-syrus-b77432272</span>
+          <span><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</span>
+        </div>
+      </div>
+      <img src="assets/avatar.jpg" alt="Shafinus Syrus S" class="resume-photo">
+    </header>
+
+    <section>
+      <div class="section-title">Profile</div>
+      <p>
+        Motivated and detail-oriented Computer Science and Engineering Graduate seeking to apply academic knowledge and technical skills to real-world software projects. Eager to contribute to innovative development work and continuous learning in a dynamic team environment.
+      </p>
+    </section>
+
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <p><strong>Languages & Tools:</strong> Java, C, HTML, CSS, JavaScript, SQL, Power BI, LoRa Wireless IoT</p>
+    </section>
+
+    <section>
+      <div class="section-title">Internship Experience</div>
+      <div class="job-head">
+        <span>Web Development Intern</span>
+        <span>Production Environment</span>
+      </div>
+      <ul>
+        <li>Applied HTML, CSS, and JavaScript to build and support web development tasks in a real production environment.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Projects</div>
+      
+      <div style="margin-bottom:12px;">
+        <div class="job-head"><span>Illegal Logging Detection System using LoRa</span></div>
+        <ul>
+          <li>Designed an IoT-based system using LoRa (Long Range) wireless communication to detect and flag unauthorized logging activity in forested areas for early intervention.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:12px;">
+        <div class="job-head"><span>AI-Based Public Grievance Redressal System</span></div>
+        <ul>
+          <li>Built a platform that uses AI to classify, prioritize, and route citizen grievances to the appropriate authority, aiming to reduce resolution time.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:12px;">
+        <div class="job-head"><span>Aphora — AI-Powered Speech Therapy App</span></div>
+        <ul>
+          <li>Developed an AI-assisted application that guides users through structured speech therapy exercises.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom:12px;">
+        <div class="job-head"><span>Snake Game (C, Java)</span></div>
+        <ul>
+          <li>Implemented the classic arcade game in both C and Java to practice game-loop logic and collision detection.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Achievements</div>
+      <ul>
+        <li>Won prizes for paper presentation, poster presentation, and other technical competitions.</li>
+        <li>Selected for <strong>Niral Thiruvila</strong> through the <strong>Naan Mudhalvan</strong> scheme.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Leadership & Extracurricular Involvement</div>
+      <ul>
+        <li>Served as Treasurer, Ensav Club.</li>
+        <li>Executive member across professional and non-professional clubs, including IEEE, Tamil Mantram, and YRC.</li>
+        <li>Organised and coordinated several club-level events.</li>
+        <li>Interests: drawing, painting, singing, badminton, and reading.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-title">Education</div>
+      
+      <div style="margin-bottom:10px;">
+        <div class="edu-head">
+          <span>Bachelor of Computer Science and Engineering</span>
+          <span>2022 – 2026</span>
+        </div>
+        <div class="edu-sub">St. Xavier's Catholic College of Engineering | <strong>CGPA: 8.7</strong></div>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        <div class="edu-head">
+          <span>Higher Secondary Certificate (HSC)</span>
+          <span>78.8%</span>
+        </div>
+        <div class="edu-sub">Holy Cross Anglo-Indian Higher Secondary School</div>
+      </div>
+
+      <div>
+        <div class="edu-head">
+          <span>SSLC</span>
+          <span>79.4%</span>
+        </div>
+        <div class="edu-sub">Holy Cross Anglo-Indian Higher Secondary School</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Core Strengths & Languages</div>
+      <p><strong>Core Strengths:</strong> Teamwork · Time Management · Effective Communication · Adaptability</p>
+      <p><strong>Languages Spoken:</strong> English, Tamil</p>
+    </section>
+  </div>
+
+</body>
+</html>
