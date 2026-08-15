@@ -388,24 +388,29 @@ function init3DCards() {
 }
 
 /* ==========================================================================
-   WhatsApp Contact Form
+   Email Contact Form
    ========================================================================== */
-function sendToWhatsApp() {
-  const textarea = document.getElementById('wa-message');
-  const message = textarea ? textarea.value.trim() : '';
+function sendEmail() {
+  const name    = (document.getElementById('contact-name')?.value || '').trim();
+  const email   = (document.getElementById('contact-email')?.value || '').trim();
+  const message = (document.getElementById('wa-message')?.value || '').trim();
 
   if (!message) {
+    const textarea = document.getElementById('wa-message');
     textarea.focus();
     textarea.style.borderColor = 'rgba(255, 100, 100, 0.6)';
-    textarea.setAttribute('placeholder', 'Please type a message first…');
-    setTimeout(() => {
-      textarea.style.borderColor = '';
-    }, 1800);
+    setTimeout(() => { textarea.style.borderColor = ''; }, 1800);
     return;
   }
 
-  const phone = '917395807834'; // +91 7395 807 834
-  const encoded = encodeURIComponent(message);
-  const url = `https://wa.me/${phone}?text=${encoded}`;
-  window.open(url, '_blank');
+  const to      = 'shafinussyrus@gmail.com';
+  const subject = name ? `Portfolio Inquiry from ${name}` : 'Portfolio Inquiry';
+  const body    = [
+    name  ? `Name: ${name}`   : '',
+    email ? `Email: ${email}` : '',
+    '',
+    message
+  ].filter(Boolean).join('\n');
+
+  window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }

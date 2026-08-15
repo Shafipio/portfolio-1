@@ -575,14 +575,18 @@
           <h2 style="margin-bottom: 1rem;">Let's Build Something Great</h2>
         </div>
 
-        <!-- WhatsApp Message Form -->
+        <!-- Email Message Form -->
         <div class="wa-form">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <input id="contact-name" class="wa-textarea" type="text" placeholder="Your Name" style="resize: none; padding: 0.85rem 1.1rem; border-radius: var(--radius-md);" />
+            <input id="contact-email" class="wa-textarea" type="email" placeholder="Your Email" style="resize: none; padding: 0.85rem 1.1rem; border-radius: var(--radius-md);" />
+          </div>
           <div class="wa-input-wrap">
             <textarea id="wa-message" class="wa-textarea" rows="4" placeholder="Type your message here… e.g. Hi Shafinus, I'd love to discuss an opportunity with you."></textarea>
           </div>
-          <button id="wa-send-btn" class="btn wa-send-btn" onclick="sendToWhatsApp()">
-            <i class="fa-brands fa-whatsapp"></i>
-            Send on WhatsApp
+          <button id="wa-send-btn" class="btn wa-send-btn" onclick="sendEmail()">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Email
           </button>
         </div>
 

@@ -1706,11 +1706,11 @@ a:hover {
 }
 
 .wa-send-btn {
-  background: linear-gradient(135deg, #25d366 0%, #128c50 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #c8b6ff 0%, #8bb8e8 100%);
+  color: #0a0012;
   border: none;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.9rem 2rem;
   border-radius: var(--radius-full);
   cursor: pointer;
@@ -1719,7 +1719,7 @@ a:hover {
   justify-content: center;
   gap: 0.6rem;
   transition: transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 4px 24px rgba(200, 182, 255, 0.35);
   align-self: stretch;
 }
 
@@ -1729,7 +1729,7 @@ a:hover {
 
 .wa-send-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 32px rgba(200, 182, 255, 0.55);
 }
 
 .wa-send-btn:active {
