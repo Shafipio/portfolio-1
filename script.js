@@ -386,3 +386,26 @@ function init3DCards() {
     });
   });
 }
+
+/* ==========================================================================
+   WhatsApp Contact Form
+   ========================================================================== */
+function sendToWhatsApp() {
+  const textarea = document.getElementById('wa-message');
+  const message = textarea ? textarea.value.trim() : '';
+
+  if (!message) {
+    textarea.focus();
+    textarea.style.borderColor = 'rgba(255, 100, 100, 0.6)';
+    textarea.setAttribute('placeholder', 'Please type a message first…');
+    setTimeout(() => {
+      textarea.style.borderColor = '';
+    }, 1800);
+    return;
+  }
+
+  const phone = '917395807834'; // +91 7395 807 834
+  const encoded = encodeURIComponent(message);
+  const url = `https://wa.me/${phone}?text=${encoded}`;
+  window.open(url, '_blank');
+}

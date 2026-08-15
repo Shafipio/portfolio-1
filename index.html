@@ -569,20 +569,33 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <div class="card reveal" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 4rem 2rem;">
-        <h2 style="margin-bottom: 1.5rem;">Let's Build Something Great</h2>
-        <p style="margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">
-          I am currently open to new opportunities at companies of all sizes — startups, agencies, MNCs, and everything in between. If you're looking for a dedicated software engineer, let's connect.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-          <a href="mailto:shafinussyrus@gmail.com" class="btn btn-primary">
-            <i class="fa-solid fa-envelope"></i> Email Me
+      <div class="card reveal contact-card" style="max-width: 700px; margin: 0 auto; padding: 3.5rem 2.5rem;">
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 style="margin-bottom: 1rem;">Let's Build Something Great</h2>
+          <p style="max-width: 480px; margin: 0 auto;">
+            I am open to opportunities of all kinds — startups, agencies, MNCs and everything in between. Drop me a message and I'll reply on WhatsApp!
+          </p>
+        </div>
+
+        <!-- WhatsApp Message Form -->
+        <div class="wa-form">
+          <div class="wa-input-wrap">
+            <textarea id="wa-message" class="wa-textarea" rows="4" placeholder="Type your message here… e.g. Hi Shafinus, I'd love to discuss an opportunity with you."></textarea>
+          </div>
+          <button id="wa-send-btn" class="btn wa-send-btn" onclick="sendToWhatsApp()">
+            <i class="fa-brands fa-whatsapp"></i>
+            Send on WhatsApp
+          </button>
+        </div>
+
+        <!-- Other links -->
+        <div class="contact-links">
+          <a href="mailto:shafinussyrus@gmail.com" class="contact-link-pill">
+            <i class="fa-solid fa-envelope"></i> shafinussyrus@gmail.com
           </a>
-          <a href="https://linkedin.com/in/shafinus-syrus-b77432272" target="_blank" class="btn btn-secondary">
+          <a href="https://linkedin.com/in/shafinus-syrus-b77432272" target="_blank" class="contact-link-pill">
             <i class="fa-brands fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="tel:+917395807834" class="btn btn-secondary">
-            <i class="fa-solid fa-phone"></i> +91 73958 07834
           </a>
         </div>
       </div>

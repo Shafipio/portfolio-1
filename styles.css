@@ -1666,3 +1666,103 @@ a:hover {
     padding: 1.5rem;
   }
 }
+
+/* ==========================================================================
+   Contact — WhatsApp Form
+   ========================================================================== */
+.wa-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wa-input-wrap {
+  position: relative;
+}
+
+.wa-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  line-height: 1.6;
+}
+
+.wa-textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+.wa-textarea:focus {
+  border-color: rgba(37, 211, 102, 0.5);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.1);
+}
+
+.wa-send-btn {
+  background: linear-gradient(135deg, #25d366 0%, #128c50 100%);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.3);
+  align-self: stretch;
+}
+
+.wa-send-btn i {
+  font-size: 1.2rem;
+}
+
+.wa-send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+}
+
+.wa-send-btn:active {
+  transform: translateY(0);
+}
+
+/* Contact link pills at bottom */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.contact-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.contact-link-pill:hover {
+  border-color: var(--accent-light);
+  color: var(--text-primary);
+  box-shadow: 0 0 16px rgba(200, 182, 255, 0.15);
+}
+
